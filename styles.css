@@ -1,0 +1,128 @@
+body, html {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;    
+    color: #434569 !important;
+    background-color: #F8F9FA;
+}
+.gridwrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0; 
+    margin: 0;
+}
+.grid-container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 2fr 2fr;
+}
+
+
+.grid-item {
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+p h3{
+    color: #434569;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 90vh; */
+}
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 10vh; */
+}
+
+.weather {
+	
+    max-width: 500px;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+}
+
+.location, .temperature, .description, .details {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 0;
+}
+
+.location h1, .temperature h2, .description h3, .details h4 {
+    color: #434569;
+    margin-bottom: 10px;
+}
+
+.details ul {
+    list-style-type: none;
+    padding: 0;
+    color: #434569;
+}
+
+.details ul li {
+    line-height: 24px;
+    color:  #434569;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #4ead4b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #439440;
+}
+
+@media screen and (max-width:768px){
+    #weather-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex: 100%;
+        
+    
+    }
+    h3{
+        margin: 0;
+    }
+    button{
+        width: 80%;
+    }
+     #city-input{
+        flex: 40%;
+        margin: 20px;
+    }
+}

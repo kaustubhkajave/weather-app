@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather report</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="gridwrapper">
+
+		<div class="grid-item item1">
+					<div class="container1">
+				<div class="weather"><form id="weather-form">
+					<label for="city-input"><h3>Enter a city name:</h3></label>
+					<input type="text" id="city-input" name="city-input">
+					<button type="submit">Get Weather</button>
+				</form></div>
+			</div>
+		</div>
+		<div class="grid-item item2">
+	
+			<div class="container">
+				<div class="weather">
+					<div class="location">
+						
+						<h1>City, Country</h1>
+						<p>Date and Time</p>
+						
+			
+						</form>
+					</div>
+					<div class="temperature">
+						<h2>Temperature</h2>
+						
+					</div>
+					<div class="description">
+						<h3>Description</h3>
+						<p></p>
+					</div>
+					<div class="details">
+						<h4>More Details</h4>
+						<ul>
+							<li>Humidity: <span id="humidity"></span></li>
+							<li>Wind Speed: <span id="wind-speed"></span></li>
+							<li>Pressure: <span id="pressure"></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
